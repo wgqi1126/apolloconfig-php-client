@@ -1,0 +1,21 @@
+{
+    "name": "wgqi1126/apolloconfig-php-client",
+    "description": "Apollo（阿波罗）配置PHP客户端",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wgqi1126\\ApolloconfigPhpClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Echo Wang",
+            "email": "wgqi1126@qq.com"
+        }
+    ]
+}
