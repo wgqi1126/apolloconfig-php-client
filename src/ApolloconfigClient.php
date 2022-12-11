@@ -135,7 +135,11 @@ class ApolloconfigClient
                 $changesNames[] = $v['namespaceName'];
                 $notifications[$v['namespaceName']]['notificationId'] = $v['notificationId'];
             }
-            $callback($changesNames, $changes);
+
+            $cbRs = $callback($changesNames, $changes);
+            if ($cbRs === false) {
+                break;
+            }
         }
     }
 
