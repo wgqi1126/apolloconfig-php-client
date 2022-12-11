@@ -3,7 +3,7 @@
     "description": "Apollo（阿波罗）配置PHP客户端",
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "^7.5",
+        "guzzlehttp/guzzle": "*",
         "ext-json": "*"
     },
     "license": "MIT",
