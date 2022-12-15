@@ -126,6 +126,10 @@ class ApolloconfigClient
 
             $rs = $this->call("/notifications/v2", $query, 120);
 
+            if ($rs['code'] == 304) { // 没有变化
+                continue;
+            }
+
             if ($rs['code'] != 200) {
                 throw new Exception("Call apolloconfig server api error: http_code: {$rs['code']}, body: {$rs['body']}");
             }
